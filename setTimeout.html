@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Burgoo</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    <link rel="shortcut icon" href=".\Images\icon.png" type="image/x-icon">
+    <style>
+        .screen{
+            background-color: blue;
+            height: 100px;
+            width: 100px;
+        }
+        .change{
+            background-color: rgb(59, 145, 27);
+            height: 200px;
+            width: 100px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="screen" id="screen"></div>
+    <button class="myBtn">Change</button>
+    <script>
+        const view=document.getElementById("screen");
+        const hell=document.getElementsByClassName("myBtn")[0];
+        function myFunction() {
+  alert ("Hello World!");
+  view.classList.toggle('change');
+  }
+          ////  setTimeOut
+  function delay(){
+    setTimeout(myFunction,4000);
+  }
+        hell.addEventListener("click", delay(),false);
+    </script>
+  </body>
+</html>
